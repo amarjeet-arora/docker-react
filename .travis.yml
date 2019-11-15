@@ -8,5 +8,5 @@ before_install:
   - docker build -t mytestapp -f dockerfile.dev .
 
 script:
- - dockerrun mytestapp npm run test -- --coverage
+ - docker run mytestapp npm run test -- --coverage
   
